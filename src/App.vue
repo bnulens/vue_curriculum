@@ -1,19 +1,24 @@
 <template>
   <div id="app">
-    <Header/>
-    <Body>
-      <Skill/>
-    </Body>
+    <app-header/>
+    <about/>
+    <skills/>
+    <skill-icons></skill-icons>
   </div>
 </template>
 
 <script>
 import Header from './components/HeaderComp.vue'
-import Body from './components/BodyComp.vue'
+import about from './components/AboutComp.vue'
+import Skill from './components/SkillComp'
 
 export default {
   name: 'app',
-  components: { Body, Header }
+  components: { 
+    'app-header': Header,
+    'about': about,
+    'skills': Skill
+  }
 }
 </script>
 

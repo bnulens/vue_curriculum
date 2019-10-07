@@ -1,16 +1,16 @@
-<template>
-    <span>
-        <img :v-for='skillIcon in skillIcons' :src='getSkillImage(skillIcons)' :alt='skillIcons.title'>
-    </span>
-</template>
-    
-<script>
-
-export default {
-    name: 'Skill',
-    props: ['skillIcons'],
+Vue.component('skill-icons', {
+    template: '<span class="skill-wrapper><img v-for="skillIcon in skillIcon" :src=getSkillImage(skillIcon) :alt="skillIcons.title"></span>' ,
     data () {
-        [
+        return {
+        }
+    }
+});
+
+new Vue({
+    el: '#vue-app',
+    data: {
+        skillIcons: [
+
             {id: 1, title: 'HTML5', pic: 'html5'},
             {id: 2, title: 'CSS3', pic: 'css3'},
             {id: 3, title: 'Sass', pic: 'sass'},
@@ -20,24 +20,7 @@ export default {
             {id: 7, title: 'PostGreSQL', pic: 'postgres'},
             {id: 8, title: 'GitKraken', pic: 'gitkraken'},
             {id: 9, title: 'VisualStudioCode', pic: 'visualstudiocode'}
+        
         ]
     },
-        methods: {
-        getSkillImage(skillIcons){
-            return require (`../assets/icons/${skillIcons.pic}.png`)
-        }
-    }
-}
-
-</script>
-
-<style scoped>
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-
-
-</style>
+})
