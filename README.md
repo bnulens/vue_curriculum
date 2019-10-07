@@ -1,4 +1,4 @@
-# vue_intro
+# vue_curriculum
 
 ## Project setup
 ```
