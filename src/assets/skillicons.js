@@ -1,4 +1,4 @@
-let skillIcons= [
+const skillIcons = [
 
     {id: 1, title: 'HTML5', pic: 'html5'},
     {id: 2, title: 'CSS3', pic: 'css3'},

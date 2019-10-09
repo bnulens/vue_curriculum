@@ -18,13 +18,23 @@
 </script>
 
 <style>
+
     * {
         margin: 0;
         padding: 0;
     }
 
     img {
-        width: 40px;
+        width: 28px;
         margin-left: 20px;
     }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        border: 2px dotted rgb(0, 21, 255);
+    }
+
 </style>
