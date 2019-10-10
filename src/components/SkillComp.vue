@@ -1,5 +1,5 @@
 <template>
-    <div class="skill-set">
+    <div id="skill-set">
         <ul id="skill-icons" v-for="skillIcon in skillIcons" :key='skillIcon.id'>
             <li>
                 <img class="skill" v-bind:src='getSkillImage(skillIcon)' v-bind:alt="skillIcon.title" @mouseover="hover = true">
@@ -30,12 +30,8 @@ export default {
     },
     methods:{
         getSkillImage(skillIcon) {
-            let path = '../src/assets/icons/'+skillIcons.pic
-                try {
-                    require(path)
-                } catch (e) {
-                    return console.log('Not been able to render image')
-                }
+            let path = require(`./../assets/icons/${skillIcon.pic}.png`)
+            return path;
         }
     }
 }
@@ -48,14 +44,14 @@ export default {
         padding: 0;
     }
 
-    .skill-set {
+    #skill-set {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         margin: 30px 0px 15px 0px;
     }
 
-    .skill:hover {
+    #skill:hover {
         border-radius: 88%;
         background-color: rgba(0, 255, 145, 0.29);
     }

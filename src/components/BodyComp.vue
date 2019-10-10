@@ -1,8 +1,7 @@
 <template>
     <div id="body-wrapper">
     <About/>
-    <h4>'Skills'</h4>
-        <Skill/>
+    <Skill/>
     </div>
 </template>
     

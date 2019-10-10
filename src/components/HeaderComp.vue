@@ -31,7 +31,6 @@ export default {
     align-items: center;
     height: 200px;
     width: 100%;
-    background-color: rgb(98, 255, 163);
     font-weight: 500;
 }
 
