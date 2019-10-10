@@ -2,13 +2,13 @@
     <div class="footer">
         <div class="ref-icons">
             <a href="https://github.com/bnulens" target="_blank">
-                <img class="ref-github" src="./../assets/icons/github.svg" alt="GitHub logo">
+                <img class="ref-github" src="/assets/icons/github.svg" alt="GitHub logo">
             </a>
             <a href="https://www.linkedin.com/in/brecht-nulens/" target="_blank">
-                <img class="ref-github" src="./../assets/icons/linkedIn.png" alt="LinkedIn logo">
+                <img class="ref-github" src="/assets/icons/linkedIn.png" alt="LinkedIn logo">
             </a>
             <a href="mailto:brechtnulens@gmail.com" target="_blank">
-                <img class="ref-github" src="./../assets/icons/gmail.png" alt="Gmail logo">
+                <img class="ref-github" src="/assets/icons/gmail.png" alt="Gmail logo">
             </a>
         </div>
     </div>

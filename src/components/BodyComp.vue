@@ -1,7 +1,7 @@
 <template>
     <div id="body-wrapper">
-    <About/>
-    <Skill/>
+        <About/>
+        <Skill/>
     </div>
 </template>
     
@@ -27,9 +27,9 @@ export default {
 
 <style scoped>
 
-* {
-  margin: 0;
-  padding: 0;
+* { 
+    margin: 0;
+    padding: 0;
 }
 
 #body-wrapper {
