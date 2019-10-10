@@ -1,6 +1,6 @@
 <template>
-  <div id="wrapper">
-    <h1>"xyz"</h1>
+  <div id="about-wrapper">
+    <h2>I am Brecht Nulens</h2>
   </div>
 </template>
 

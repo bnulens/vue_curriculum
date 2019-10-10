@@ -17,7 +17,6 @@ export default {
     'app-header': Header,
     'app-body': Body,
     'app-footer': Footer
- 
   }
 }
 </script>
@@ -30,11 +29,12 @@ export default {
 }
 
 #app {
+  /* font */
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  /*  */
 }
 </style>

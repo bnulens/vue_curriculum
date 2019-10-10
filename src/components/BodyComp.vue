@@ -1,6 +1,7 @@
 <template>
-    <div class="body-wrapper">
-    <h4>Body</h4>
+    <div id="body-wrapper">
+    <About/>
+    <h4>'Skills'</h4>
         <Skill/>
     </div>
 </template>
@@ -32,6 +33,12 @@ export default {
   padding: 0;
 }
 
-
+#body-wrapper {
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    margin: 30px 0px 15px 0px;
+}
 
 </style>
