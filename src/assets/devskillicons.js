@@ -1,4 +1,4 @@
-const skillIcons = [
+const devSkillIcons = [
 
     {id: 1, title: 'HTML5', pic: 'html5'},
     {id: 2, title: 'CSS3', pic: 'css3'},
@@ -8,8 +8,9 @@ const skillIcons = [
     {id: 6, title: 'PhP', pic: 'php'},
     {id: 7, title: 'PostGreSQL', pic: 'postgresql'},
     {id: 8, title: 'GitKraken', pic: 'gitkraken'},
-    {id: 9, title: 'VisualStudioCode', pic: 'vscode'}
+    {id: 9, title: 'Github', pic: 'git'},
+    {id: 10, title: 'VisualStudioCode', pic: 'vscode'}
 
 ]
 
-export default skillIcons
+export default devSkillIcons

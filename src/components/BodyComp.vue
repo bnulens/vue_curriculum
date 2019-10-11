@@ -8,7 +8,7 @@
 <script>
 import AboutComp from './AboutComp'
 import SkillComp from './SkillComp'
-import skillicons from '../assets/skillicons.js'
+import devSkillIcons from '../assets/devskillicons.js'
 
 export default {
     name: 'Body',
@@ -18,7 +18,7 @@ export default {
     },
     data(){
         return {
-            skillicons
+            devSkillIcons
         }
     },
     method: {}

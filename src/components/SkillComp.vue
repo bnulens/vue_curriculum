@@ -1,21 +1,21 @@
 <template>
     <div id="dev-skill-set">
-        <ul id="dev-skill-icons" v-for="skillIcon in skillIcons" :key='skillIcon.id'>
+        <ul id="dev-skill-icons" v-for="devSkillIcon in devSkillIcons" :key='devSkillIcon.id'>
             <li>
-                <img class="dev-skill" :src="`/assets/icons/${skillIcon.pic}.svg`" :alt="skillIcon.title" @mouseover="hover = true">
+                <img class="dev-skill" :src="`/assets/icons/${devSkillIcon.pic}.svg`" :alt="devSkillIcon.title" @mouseover="hover = true">
             </li>
         </ul>
     </div>
 </template>
 
 <script>
-import skillIcons from '../assets/skillicons'
+import devSkillIcons from '../assets/devskillicons'
 export default {
     name: 'Skill',
     data() {
         return {
             hover: false,
-            skillIcons
+            devSkillIcons
         }
     },
 }
@@ -40,7 +40,7 @@ export default {
     }
 
     .dev-skill {
-        width: 60px;
+        width: 40px;
         margin: 0px 10px 
     }
 
