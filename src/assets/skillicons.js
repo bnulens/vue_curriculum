@@ -4,11 +4,11 @@ const skillIcons = [
     {id: 2, title: 'CSS3', pic: 'css3'},
     {id: 3, title: 'Sass', pic: 'sass'},
     {id: 4, title: 'Javascript', pic: 'javascript'},
-    {id: 5, title: 'VueJs', pic: 'vue'},
+    {id: 5, title: 'VueJs', pic: 'vuejs'},
     {id: 6, title: 'PhP', pic: 'php'},
-    {id: 7, title: 'PostGreSQL', pic: 'postgres'},
+    {id: 7, title: 'PostGreSQL', pic: 'postgresql'},
     {id: 8, title: 'GitKraken', pic: 'gitkraken'},
-    {id: 9, title: 'VisualStudioCode', pic: 'visualstudiocode'}
+    {id: 9, title: 'VisualStudioCode', pic: 'vscode'}
 
 ]
 

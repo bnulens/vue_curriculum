@@ -1,8 +1,8 @@
 <template>
-    <div id="skill-set">
-        <ul id="skill-icons" v-for="skillIcon in skillIcons" :key='skillIcon.id'>
+    <div id="dev-skill-set">
+        <ul id="dev-skill-icons" v-for="skillIcon in skillIcons" :key='skillIcon.id'>
             <li>
-                <img class="skill" :src="`/assets/icons/${skillIcon.pic}.png`" :alt="skillIcon.title" @mouseover="hover = true">
+                <img class="dev-skill" :src="`/assets/icons/${skillIcon.pic}.svg`" :alt="skillIcon.title" @mouseover="hover = true">
             </li>
         </ul>
     </div>
@@ -18,12 +18,6 @@ export default {
             skillIcons
         }
     },
-    methods:{
-        getSkillImage(skillIcon) {
-            let path = require(`./../assets/icons/${skillIcon.pic}.png`)
-            return path;
-        }
-    }
 }
 
 </script>
@@ -34,25 +28,24 @@ export default {
         padding: 0;
     }
 
-    #skill-set {
+    #dev-skill-set {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         margin: 30px 0px 15px 0px;
     }
 
-    #skill-icons {
+    #dev-skill-icons {
         display: flex;
-        /* flex-direction: row; */
     }
 
-    .skill {
+    .dev-skill {
         width: 60px;
+        margin: 0px 10px 
     }
 
-    .skill:hover {
+    .dev-skill:hover {
         border-radius: 88%;
-        background-color: rgba(0, 255, 145, 0.29);
     }
     ul {
         list-style: none;        
