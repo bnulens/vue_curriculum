@@ -11,7 +11,6 @@
 </template>
 
 <script>
-
 export default {
     name: 'Header'
 }
@@ -29,7 +28,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    height: 20vh;
     width: 100%;
     font-weight: 500;
 }

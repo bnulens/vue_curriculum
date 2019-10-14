@@ -16,14 +16,20 @@
                 </li>
             </ul>
         </div>
+        <app-road-map></app-road-map>
     </div>
 </template>
 
 <script>
+import RoadmapComp from './RoadmapComp'
 import devSkillIcons from '../assets/devskillicons'
 import designerSkillIcons from '../assets/designerskills'
+
 export default {
     name: 'Skill',
+    components: {
+        'app-road-map':RoadmapComp
+    },
     data() {
         return {
             hover: false,
@@ -46,9 +52,8 @@ export default {
 
     #skill-wrapper {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 90%;
+        flex-direction: column;
+        justify-content: flex-start;
     }
 
     /* DEVOPS STYLING */
@@ -61,7 +66,6 @@ export default {
         flex-wrap: wrap;
         justify-content: center;
         margin: 60px 0px 15px 0px;
-        width: 100%;
     }
 
     #dev-skill-icons {
@@ -74,11 +78,16 @@ export default {
     .dev-skill {
         display: block;
         width: 40px;
-        margin: 5px 5px 
+        margin: 5px 5px;
+        filter: grayscale(0.8);
+        -webkit-filter: grayscale(0.8);
+        transition: filter 0.3s;
+        -webkit-transition : filter 0.3s;
     }
 
     .dev-skill:hover {
-        border-bottom: 3px solid red;
+        filter: grayscale(0);
+        -webkit-filter: grayscale(0);
     }
 
     /* DESIGNER STYLING */

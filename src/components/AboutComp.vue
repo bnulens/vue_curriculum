@@ -3,7 +3,7 @@
     <div class="about-paragraph">
       <p class="about-title">I am <strong>Brecht Nulens</strong></p>
       <p class="about-punch">"Aspiring <strong>junior web developer</strong> with emphasis on graphic design"</p>
-      <p class="about-catch">Focused on <strong>continious learning and improvement.</strong>
+      <p class="about-catch">Focused on <strong>continuous learning and improvement.</strong>
       Spending spare time on Udemy, W3schools and Laracasts.</p>
     </div>
   </div>
@@ -23,26 +23,22 @@ export default {
     margin: 0;
     height: 100%;
   }
-  h1 {
-    font-size: 56px;
-    border: 1px solid blue;
-  }
 
   #about-wrapper {
     display: flex;
-    justify-content: flex-start;
-    margin-left: 20vw;
+    justify-content: center;
+    width: 100%;
   }
 
   .about-paragraph {
     display: flex;
     flex-wrap: wrap;
     text-align: initial;
-    width: 50vw;
+    width: 42%;
   }
 
   .about-title {
-    font-size: 22px;
+    font-size: 26px;
   }
 
   .about-punch {
@@ -53,7 +49,7 @@ export default {
 
   .about-catch {
     font-size: 16px;
-    width: 44vw;
+    width: 22vw;
     margin-top: 1vh;
   }
 
