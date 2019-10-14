@@ -22,7 +22,7 @@ export default {
 
 #road-map-wrapper {
     width: 100vw;
-    background-color: rgb(255, 247, 234);
+    background-color: rgb(108, 108, 108);
 }
 
 #road-map {
