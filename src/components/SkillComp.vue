@@ -1,53 +1,108 @@
 <template>
-    <div id="dev-skill-set">
-        <ul id="dev-skill-icons" v-for="devSkillIcon in devSkillIcons" :key='devSkillIcon.id'>
-            <li>
-                <img class="dev-skill" :src="`/assets/icons/${devSkillIcon.pic}.svg`" :alt="devSkillIcon.title" @mouseover="hover = true">
-            </li>
-        </ul>
+    <div id="skill-wrapper">
+        <div id="dev-skill-set">
+            <h3 class="dev-title">as a developer</h3>
+            <ul id="dev-skill-icons" v-for="devSkillIcon in devSkillIcons" :key='devSkillIcon.id'>
+                <li>
+                    <img class="dev-skill" :src="`/assets/icons/${devSkillIcon.pic}.svg`" :alt="devSkillIcon.title" @mouseover="hover = true">
+                </li>
+            </ul>
+        </div>
+        <div id="designer-skill-set">
+            <h3 class="designer-title">as a designer</h3>
+            <ul id="designer-skill-icons" v-for="designerSkillIcon in designerSkillIcons" :key='designerSkillIcon.id'>
+                <li>
+                    <img class="designer-skill" :src="`/assets/icons/${designerSkillIcon.pic}.svg`" :alt="designerSkillIcon.title" @mouseover="hover = true">
+                </li>
+            </ul>
+        </div>
     </div>
 </template>
 
 <script>
 import devSkillIcons from '../assets/devskillicons'
+import designerSkillIcons from '../assets/designerskills'
 export default {
     name: 'Skill',
     data() {
         return {
             hover: false,
-            devSkillIcons
+            devSkillIcons,
+            designerSkillIcons
         }
-    },
+    }
 }
 
 </script>
 
-<style>
+<style scoped>
     * {
         margin: 0;
         padding: 0;
+    }
+
+    ul {
+        list-style: none;        
+    }
+
+    #skill-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 90%;
+    }
+
+    /* DEVOPS STYLING */
+    .dev-title {
+        margin-right: 80px;
     }
 
     #dev-skill-set {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin: 30px 0px 15px 0px;
+        margin: 60px 0px 15px 0px;
+        width: 100%;
     }
 
     #dev-skill-icons {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 55px;
     }
 
     .dev-skill {
+        display: block;
         width: 40px;
-        margin: 0px 10px 
+        margin: 5px 5px 
     }
 
     .dev-skill:hover {
-        border-radius: 88%;
+        border-bottom: 3px solid red;
     }
-    ul {
-        list-style: none;        
+
+    /* DESIGNER STYLING */
+    .designer-title {
+        margin-right: 80px;
+    }
+
+    #designer-skill-set {
+        display: flex;
+        justify-content: center;
+        margin: 60px 0px 15px 0px;
+        width: 100%;
+    }
+    
+    #designer-skill-icons {
+        display: flex;
+        justify-content: center;
+        width: 55px;
+    }
+
+    .designer-skill {
+        display: block;
+        width: 40px;
+        margin: 5px 5px 
     }
 </style>

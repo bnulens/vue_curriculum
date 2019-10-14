@@ -8,20 +8,13 @@
 <script>
 import AboutComp from './AboutComp'
 import SkillComp from './SkillComp'
-import devSkillIcons from '../assets/devskillicons.js'
 
 export default {
     name: 'Body',
     components: {
         'About': AboutComp,
         'Skill': SkillComp
-    },
-    data(){
-        return {
-            devSkillIcons
-        }
-    },
-    method: {}
+    }
 }
 </script>
 
