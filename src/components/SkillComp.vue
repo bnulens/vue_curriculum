@@ -16,7 +16,7 @@
                 </li>
             </ul>
         </div>
-        <app-road-map></app-road-map>
+        <!-- <app-road-map></app-road-map> -->
     </div>
 </template>
 
@@ -65,6 +65,8 @@ export default {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
+        height: 100px;
         margin: 60px 0px 15px 0px;
     }
 
@@ -79,15 +81,12 @@ export default {
         display: block;
         width: 40px;
         margin: 5px 5px;
-        filter: grayscale(0.8);
-        -webkit-filter: grayscale(0.8);
-        transition: filter 0.3s;
-        -webkit-transition : filter 0.3s;
+        transition: ease margin 0.15s;
+        -webkit-transition: ease margin 0.15s;
     }
 
-    .dev-skill:hover {
-        filter: grayscale(0);
-        -webkit-filter: grayscale(0);
+    .dev-skill:hover{
+        margin-bottom: 40px;
     }
 
     /* DESIGNER STYLING */

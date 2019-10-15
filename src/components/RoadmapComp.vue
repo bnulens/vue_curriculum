@@ -22,11 +22,10 @@ export default {
 
 #road-map-wrapper {
     width: 100vw;
-    background-color: rgb(108, 108, 108);
+    /* background-color: rgb(216, 216, 216); */
 }
 
 #road-map {
-    border: 1px dotted rgb(169, 169, 169);
-    margin: 20px 0px;
+    /* border: 1px dotted rgb(169, 169, 169); */
 }
 </style>
