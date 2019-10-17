@@ -4,6 +4,7 @@
             <h3 class="dev-title">as a developer</h3>
             <ul id="dev-skill-icons" v-for="devSkillIcon in devSkillIcons" :key='devSkillIcon.id'>
                 <li>
+                    <span>{{ devSkillIcon.title }}</span>
                     <img class="dev-skill" :src="`/assets/icons/${devSkillIcon.pic}.svg`" :alt="devSkillIcon.title" @mouseover="hover = true">
                 </li>
             </ul>
@@ -71,24 +72,32 @@ export default {
     }
 
     #dev-skill-icons {
-        display: flex;
-        flex-wrap: wrap;
+        display: block;
         justify-content: center;
         width: 55px;
+    }
+
+    #dev-skill-icons span {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: ease transform 0.3s, opacity 0.3s;
+        -webkit-transition: ease transform 0.3s, opacity 0.3s;
+    }
+
+    #dev-skill-icons:hover span {
+        opacity: 1;
+        transform: translate(0px, -10px);
     }
 
     .dev-skill {
         display: block;
         width: 40px;
         margin: 5px 5px;
-        transition: ease margin 0.15s;
-        -webkit-transition: ease margin 0.15s;
     }
-
-    .dev-skill:hover{
-        margin-bottom: 40px;
-    }
-
+    
     /* DESIGNER STYLING */
     .designer-title {
         margin-right: 80px;
@@ -110,6 +119,12 @@ export default {
     .designer-skill {
         display: block;
         width: 40px;
-        margin: 5px 5px 
+        margin: 5px 5px;
+        transition: ease transform 0.15s;
+        -webkit-transition: ease transform 0.15s;
+    }
+
+    .designer-skill:hover {
+        transform: translate(0px, -22px);
     }
 </style>
