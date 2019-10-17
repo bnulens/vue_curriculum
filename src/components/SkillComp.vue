@@ -17,6 +17,7 @@
                 </li>
             </ul>
         </div>
+        <!-- Enable the RoadMapComp by uncommenting following line: -->
         <!-- <app-road-map></app-road-map> -->
     </div>
 </template>
@@ -59,16 +60,15 @@ export default {
 
     /* DEVOPS STYLING */
     .dev-title {
-        margin-right: 80px;
+        margin-right: 60px;
     }
 
     #dev-skill-set {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
         align-items: center;
         height: 100px;
-        margin: 60px 0px 15px 0px;
+        margin: 50px 0px 15px 0px;
     }
 
     #dev-skill-icons {
@@ -80,8 +80,8 @@ export default {
     #dev-skill-icons span {
         display: flex;
         position: relative;
-        align-items: center;
         justify-content: center;
+        font-size: 14px;
         opacity: 0;
         transition: ease transform 0.3s, opacity 0.3s;
         -webkit-transition: ease transform 0.3s, opacity 0.3s;
@@ -89,18 +89,25 @@ export default {
 
     #dev-skill-icons:hover span {
         opacity: 1;
-        transform: translate(0px, -10px);
+        transform: translate(0px, -18px);
     }
 
     .dev-skill {
         display: block;
         width: 40px;
-        margin: 5px 5px;
+        margin: 0px 8px;
+        transition: ease transform 0.3s, filter 0.3s;
+    }
+
+    .dev-skill:hover {
+        /* display: block; */
+        transform: scale(1.2,1.2);
+        filter: drop-shadow(4px 4px 4px gray);
     }
     
     /* DESIGNER STYLING */
     .designer-title {
-        margin-right: 80px;
+        margin-right: 60px;
     }
 
     #designer-skill-set {
@@ -112,6 +119,7 @@ export default {
     
     #designer-skill-icons {
         display: flex;
+        align-items: center;
         justify-content: center;
         width: 55px;
     }
@@ -119,12 +127,14 @@ export default {
     .designer-skill {
         display: block;
         width: 40px;
-        margin: 5px 5px;
-        transition: ease transform 0.15s;
-        -webkit-transition: ease transform 0.15s;
+        margin: 8px 8px;
+        transition: ease transform 0.15s, filter 0.3s;
+        -webkit-transition: ease transform 0.15s, filter 0.3s;
     }
 
     .designer-skill:hover {
+        display: block;
+        filter: drop-shadow(4px 4px 4px gray);
         transform: translate(0px, -22px);
     }
 </style>

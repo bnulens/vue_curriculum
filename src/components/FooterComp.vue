@@ -2,7 +2,7 @@
     <div class="footer">
         <div class="ref-icons">
             <a href="https://github.com/bnulens" target="_blank">
-                <img class="ref-icon" src="/assets/icons/github.svg" alt="GitHub logo">
+                <img class="ref-icon-github" src="/assets/icons/github.svg" alt="GitHub logo">
             </a>
             <a href="https://www.linkedin.com/in/brecht-nulens/" target="_blank">
                 <img class="ref-icon" src="/assets/icons/linkedIn.svg" alt="LinkedIn logo">
@@ -43,5 +43,16 @@
 
     .ref-icon:hover {
         filter: grayscale(0);
+    }
+
+    [class*="github"]{
+        width: 28px;
+        margin-left: 20px;
+        filter: invert(0);
+        transition: ease filter 0.3s;
+    }
+
+    [class*="github"]:hover {
+        filter: invert(1);
     }
 </style>

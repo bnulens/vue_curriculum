@@ -9,7 +9,7 @@ const devSkillIcons = [
     {id: 7, title: 'PostGreSQL', pic: 'postgresql'},
     {id: 8, title: 'GitKraken', pic: 'gitkraken'},
     {id: 9, title: 'Github', pic: 'git'},
-    {id: 10, title: 'VisualStudioCode', pic: 'vscode'},
+    {id: 10, title: 'VSCode', pic: 'vscode'},
     {id: 11, title: 'Terminal', pic: 'terminal'},
 
 ]
