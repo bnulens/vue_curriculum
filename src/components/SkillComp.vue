@@ -17,20 +17,20 @@
                 </li>
             </ul>
         </div>
-        <!-- Enable the RoadMapComp by uncommenting following line: -->
-        <!-- <app-road-map></app-road-map> -->
+        <!-- Disable/Enable the ExperienceComp by un/commenting following line: -->
+        <app-experience></app-experience>
     </div>
 </template>
 
 <script>
-import RoadmapComp from './RoadmapComp'
+import ExperienceComp from './ExperienceComp'
 import devSkillIcons from '../assets/devskillicons'
 import designerSkillIcons from '../assets/designerskills'
 
 export default {
     name: 'Skill',
     components: {
-        'app-road-map':RoadmapComp
+        'app-experience':ExperienceComp
     },
     data() {
         return {
