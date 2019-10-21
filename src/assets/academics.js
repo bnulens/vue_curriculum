@@ -1,7 +1,7 @@
 const academics = [
 
     {   id:1,
-        year: 2007-2013,
+        year: "2007-2013",
         institution: "Koninklijk Atheneum Plus",
         location: "Hasselt",
         title: "Latin - Modern Languages",
@@ -9,7 +9,7 @@ const academics = [
     }
     ,
     {   id:2,
-        year: 2013-2014,
+        year: "2013-2014",
         institution: "Luca MAD-faculty",
         location: "Genk",
         title: "Bachelor Product Design",
@@ -17,7 +17,7 @@ const academics = [
     }
     ,
     {   id:3,
-        year: 2014-2018,
+        year: "2014-2018",
         institution: "PXL MAD-faculty",
         location: "Hasselt",
         title: "Bachelor Graphic Design & Visual Arts",
@@ -25,7 +25,7 @@ const academics = [
     }
     ,
     {   id:4,
-        year: 2018,
+        year: "2018",
         institution: "SYNTRA",
         location: "Genk",
         title: "Network Engineer",
@@ -33,7 +33,7 @@ const academics = [
     }
     ,
     {   id:5,
-        year: 2019,
+        year: "2019",
         institution: "BeCode",
         location: "Genk",
         title: "Junior Web Developer",
