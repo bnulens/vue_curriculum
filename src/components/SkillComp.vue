@@ -11,8 +11,8 @@
         </div>
         <div id="designer-skill-set">
             <h3 class="designer-title">as a designer</h3>
-            <ul id="designer-skill-icons" v-for="designerSkillIcon in designerSkillIcons" :key='designerSkillIcon.id'>
-                <li>
+            <ul id="designer-skill-icons">
+                <li v-for="designerSkillIcon in designerSkillIcons" :key='designerSkillIcon.id'>
                     <img class="designer-skill" :src="`/assets/icons/${designerSkillIcon.pic}.svg`" :alt="designerSkillIcon.title" @mouseover="hover = true">
                 </li>
             </ul>

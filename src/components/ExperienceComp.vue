@@ -105,7 +105,6 @@ a {
 
 
 .experience-menu-label {
-    /* writing-mode: vertical-lr; */
     font-size: 0.8em;
     letter-spacing: 0.1em;
     font-weight:bold;
@@ -131,7 +130,6 @@ a {
 
 .menu__list {
     display: block;
-    
     margin-top: 1em;
 }
 
@@ -155,12 +153,10 @@ a {
 .menu__list:hover .menu__item_details {
     opacity: 1;
     transform: translate(10px, 0px);
-    
 }
 
 .menu__item {
     display: block;
-    
     transition: ease 0.4s;
 }
 

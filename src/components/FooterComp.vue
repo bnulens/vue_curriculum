@@ -45,14 +45,14 @@
         filter: grayscale(0);
     }
 
-    [class*="github"]{
+    .ref-icon-github{
         width: 28px;
         margin-left: 20px;
         filter: invert(0);
         transition: ease filter 0.3s;
     }
 
-    [class*="github"]:hover {
+    .ref-icon-github:hover {
         filter: invert(1);
     }
 </style>

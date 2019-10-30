@@ -5,12 +5,13 @@ const devSkillIcons = [
     {id: 3, title: 'Sass', pic: 'sass'},
     {id: 4, title: 'Javascript', pic: 'javascript'},
     {id: 5, title: 'VueJs', pic: 'vuejs'},
-    {id: 6, title: 'PhP', pic: 'php'},
-    {id: 7, title: 'PostGreSQL', pic: 'postgresql'},
-    {id: 8, title: 'GitKraken', pic: 'gitkraken'},
-    {id: 9, title: 'Github', pic: 'git'},
-    {id: 10, title: 'VSCode', pic: 'vscode'},
-    {id: 11, title: 'Terminal', pic: 'terminal'},
+    {id: 6, title: 'NodeJS', pic: 'nodejs'},
+    {id: 7, title: 'PhP', pic: 'php'},
+    {id: 8, title: 'PostGreSQL', pic: 'postgresql'},
+    {id: 9, title: 'GitKraken', pic: 'gitkraken'},
+    {id: 10, title: 'Github', pic: 'git'},
+    {id: 11, title: 'VSCode', pic: 'vscode'},
+    {id: 12, title: 'Terminal', pic: 'terminal'},
 
 ]
 
