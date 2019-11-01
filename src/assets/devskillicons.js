@@ -8,7 +8,7 @@ const devSkillIcons = [
     {id: 7, title: 'PhP', pic: 'php'},
     {id: 8, title: 'PostGreSQL', pic: 'postgresql'},
     {id: 9, title: 'GitKraken', pic: 'gitkraken'},
-    {id: 10, title: 'Github', pic: 'git'},
+    {id: 10, title: 'Git', pic: 'git'},
     {id: 11, title: 'VSCode', pic: 'vscode'},
     {id: 12, title: 'Terminal', pic: 'terminal'},
 ]

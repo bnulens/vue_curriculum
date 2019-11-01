@@ -1,45 +1,45 @@
 const workExperience = [
 
     {   id: 1,
-        year: 2010,
-        company: "Recyclagepark Kuringen",
+        year: "2010",
+        organisation: "Recyclagepark Kuringen",
         location: "Hasselt",
-        description: "staff member"
+        title: "staff member"
     }
     ,
     {   id: 2,
-        year: 2011-2017,
-        company: "Fiesta Europa",
+        year: "2011-2017",
+        organisation: "Fiesta Europa",
         location: "Flanders",
-        description: "staff member"
+        title: "staff member"
     }
     ,
     {   id: 3,
-        year:2014,
-        company: "Festival Da Copa",
+        year: "2014",
+        organisation: "Festival Da Copa",
         location: "Hasselt",
-        description: "Advertisement for sponsors"
+        title: "Advertisement for sponsors"
     }
     ,
     {   id: 4,
-        year:2016,
-        company: "Festival Da Copa",
+        year: "2016",
+        organisation: "Festival Da Copa",
         location: "Hasselt",
-        description: "Advertisement for sponsors"
+        title: "Advertisement for sponsors"
     }
     ,
     {   id: 5,
-        year:2017,
-        company: "Brasserie De Ploeg",
+        year: "2017",
+        organisation: "Brasserie De Ploeg",
         location: "Diepenbeek",
-        description: "Service & Attendance"
+        title: "Service & Attendance"
     }
     ,
     {   id: 6,
-        year: 2011-2020,
-        company: "evenement DE TENT",
+        year: "2011-2020",
+        organisation: "evenement DE TENT",
         location: "Hasselt",
-        description: "Head of Staff"
+        title: "Head of Staff"
     }
 ]
 
