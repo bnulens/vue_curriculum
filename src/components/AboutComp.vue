@@ -10,10 +10,10 @@
         <p class="about-time">estimated reading time ~3min.</p>
       </div>
     </div>
-    <div class="about-paragraph">
-      <div class="about-paragraph-body">
+    <div class="about-card">
+      <div class="about-card-body">
           <h4>A little bit more about myself...</h4>
-          <p class="about-paragraph-content">Focused on <strong>continuous learning and improvement.</strong>
+          <p class="about-card-content">Focused on <strong>continuous learning and improvement.</strong>
           Spending spare time on Udemy, W3schools and Laracasts. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis numquam rerum cum similique alias. Quaerat cum ipsam cupiditate soluta ullam est eveniet possimus beatae rem nesciunt! Maiores culpa facilis ad.
           Nisi voluptas quas asperiores natus obcaecati aliquam placeat sit ab. 
         </p>
@@ -33,18 +33,13 @@ export default {
 
   * {
     margin: 0;
-    height: 100%;
-  }
-
-  #about-module {
-    width: 90%;
+    padding: 0;
   }
 
   #about-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
   }
 
   /* INTRO p */
@@ -52,43 +47,39 @@ export default {
     display: flex;
     flex-wrap: wrap;
     text-align: initial;
-    width: 42%;
   }
 
   .about-title {
-    font-size: 32px;
+    font-size: 1rem;
   }
 
   .about-punch {
-    font-size: 42px;
-    font-weight: 500;
-    margin-top: 2vh;
+    font-size: 1.8rem;
+    margin-top: 10%;
+    text-align: auto;
   }
 
   .about-catch {
-    font-size: 18px;
-    width: 28vw;
-    margin-top: 1vh;
+    font-size: 1rem;
+    margin-top: 5%;
   }
 
   .about-time {
     display: flex;
     justify-content: flex-end;
-    font-size: 12px;
-    width: 100%;
+    font-size: 0.8rem;
     opacity: 0.5;
   }
 
-  /* Paragraph P */
-  .about-paragraph {
+  /* Paragraph */
+  .about-card {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 80px 0px;
   }
 
-  .about-paragraph-body{
-    width: 40%;
+  .about-card-body{
     padding: 20px;
     text-align: justify;
     -webkit-box-shadow: 5px 10px 24px 3px rgba(219,219,219,0.57);
@@ -96,8 +87,4 @@ export default {
     box-shadow: 5px 10px 24px 3px rgba(219,219,219,0.57);
   }
 
-  .about-paragraph-content {
-    display: block;
-    margin: 20px 0px;
-  }
 </style>

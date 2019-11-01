@@ -24,13 +24,22 @@ export default {
     padding: 0;
 }
 
+/* Mobile Portrait */
+@media screen and (min-width: 0px) and (max-width: 414px){
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
 .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20vh;
-    width: 100%;
-    font-weight: 500;
+    font-weight: 800;
+    font-size: 80%;
 }
 
 ul {
@@ -38,6 +47,10 @@ ul {
 } 
 
 li {
-    margin-left: 2vw;
+    display: flex;
+    justify-content: space-between;
+    margin: 0% 2%;
+}
+
 }
 </style>
