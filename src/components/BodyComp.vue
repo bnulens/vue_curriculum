@@ -1,5 +1,5 @@
 <template>
-    <main id="body-wrapper">
+    <main class="container">
         <AboutComp/>
         <SkillComp/>
     </main>
@@ -21,12 +21,19 @@ export default {
     padding: 0;
 }
 
-#body-wrapper {
+.container {
     display:flex;
     flex-wrap: wrap;
     position: relative;
     justify-content: center;
     margin: 50px 10px 15px;
+}
+
+@media screen and (min-width: 800px) {
+    .container {
+        max-width: 800px;
+        margin: 50px auto 15px;
+    }
 }
 
 </style>

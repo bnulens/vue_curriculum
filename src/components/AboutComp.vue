@@ -29,33 +29,14 @@ export default {
 </script>
 
 <style scoped>
-
-  * {
-    margin: 0;
-    padding: 0;
-  }
-
-  #about-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
   /* INTRO p */
-  .about-intro {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: initial;
-  }
-
   .about-title {
     font-size: 1rem;
   }
 
   .about-punch {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-top: 10%;
-    text-align: auto;
   }
 
   .about-catch {

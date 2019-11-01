@@ -31,6 +31,7 @@ export default {
 
     .icon-set-title {
         margin-bottom: 15px;
+        text-align: center;
     }
 
     .icon-set ul {
