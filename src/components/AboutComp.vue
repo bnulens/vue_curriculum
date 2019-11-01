@@ -1,5 +1,6 @@
 <template>
   <section id="about">
+    <h2 class="sr-only">About</h2>
     <div id="about-wrapper">
       <div class="about-intro">
         <p class="about-title">I am <strong>Brecht Nulens</strong></p>

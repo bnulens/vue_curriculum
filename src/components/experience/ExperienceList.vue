@@ -26,6 +26,8 @@ export default {
         padding: 15px;
         border: 1px solid black;
         border-top: none;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
     }
 
     li {

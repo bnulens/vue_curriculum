@@ -17,12 +17,6 @@ export default {
 }
 </script>
 <style scoped>
-
-* { 
-    margin: 0;
-    padding: 0;
-}
-
 .container {
     position: relative;
     margin: 50px 10px 15px;

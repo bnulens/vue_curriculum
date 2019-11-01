@@ -1,5 +1,6 @@
 <template>
     <section id="skills">
+        <h2>Skills</h2>
         <TitledIconList title="As a developer" :iconList="devSkillIcons"/>
         <TitledIconList title="As a designer" :iconList="designerSkillIcons"/>
     </section>

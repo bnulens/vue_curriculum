@@ -15,7 +15,7 @@
 export default {
     data() {
         return {
-            navItems: [ 'about', 'skills', 'academics', 'experience' ]
+            navItems: [ 'about', 'skills', 'experience' ]
         }
     }
 }

@@ -1,5 +1,5 @@
 <template>
-    <section id="academics">
+    <section id="experience">
         <h2>Experience</h2>
         <div>
             <div class="tabs">
@@ -34,10 +34,6 @@ export default {
 </script>
 
 <style scoped>
-    h2 {
-        text-align: center;
-    }
-
     .tabs {
         display: flex;
     }
@@ -45,8 +41,10 @@ export default {
     .tab {
         width: 50%;
         text-align: center;
-        padding: 5px 10px;
+        padding: 15px 10px;
         border-bottom: 1px solid black;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
         cursor: pointer;
     }
 

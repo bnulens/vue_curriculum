@@ -37,7 +37,7 @@ const workExperience = [
     ,
     {   id: 6,
         year: "2011-2020",
-        organisation: "evenement DE TENT",
+        organisation: "Evenement DE TENT",
         location: "Hasselt",
         title: "Head of Staff"
     }

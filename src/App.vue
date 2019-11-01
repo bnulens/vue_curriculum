@@ -28,6 +28,15 @@ html {
   scroll-behavior: smooth;
 }
 
+#app {
+  /* font */
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  /*  */
+}
+
 a {
   text-decoration: none;
   color: #2c3e50;
@@ -38,12 +47,21 @@ ul {
   list-style: none;
 }
 
-#app {
-  /* font */
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-  /*  */
+h2 {
+  margin-bottom: 15px;
+}
+
+section {
+  margin-bottom: 80px;
+}
+
+.sr-only {
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
 }
 </style>
