@@ -27,7 +27,9 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 15px 0;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: rgb(213, 213, 213);
 }
 
 .navbar {
@@ -42,5 +44,9 @@ li {
     display: flex;
     justify-content: space-between;
     margin: 0% 2%;
+}
+
+.navbar a {
+    padding: 10px 5px;
 }
 </style>
