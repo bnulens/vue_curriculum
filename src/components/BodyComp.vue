@@ -1,8 +1,8 @@
 <template>
-    <div id="body-wrapper">
+    <main id="body-wrapper">
         <AboutComp/>
         <SkillComp/>
-    </div>
+    </main>
 </template>
     
 <script>
@@ -26,7 +26,7 @@ export default {
     flex-wrap: wrap;
     position: relative;
     justify-content: center;
-    margin: 30px 0px 15px 0px;
+    margin: 50px 10px 15px;
 }
 
 </style>

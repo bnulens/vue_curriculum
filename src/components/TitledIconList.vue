@@ -36,6 +36,7 @@ export default {
     .icon-set ul {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-evenly;
     }
 
     .icon-set ul li {

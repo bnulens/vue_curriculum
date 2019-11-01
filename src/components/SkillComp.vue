@@ -1,9 +1,9 @@
 <template>
-    <div>
+    <section id="skills">
         <TitledIconList title="As a developer" :iconList="devSkillIcons"/>
         <TitledIconList title="As a designer" :iconList="designerSkillIcons"/>
         <ExperienceComp/>
-    </div>
+    </section>
 </template>
 
 <script>

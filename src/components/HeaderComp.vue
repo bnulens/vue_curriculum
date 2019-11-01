@@ -1,37 +1,33 @@
 <template>
-    <div class="header">
+    <header>
         <ul class="navbar">
-            <li>about</li>
-            <li>skills</li>
-            <li>academics</li>
-            <li>experience</li>
-            <li>contact</li>
+            <li v-for="(item, i) in navItems" :key="i">
+                <a :href="`#${item}`">{{ item }}</a>
+            </li>
+            <li>
+                <a href="mailto:brechtnulens@gmail.com">contact</a>
+            </li>
         </ul>
-    </div>
+    </header>
 </template>
 
 <script>
 export default {
-    name: 'Header'
+    data() {
+        return {
+            navItems: [ 'about', 'skills', 'academics', 'experience' ]
+        }
+    }
 }
 
 </script>
 
 <style scoped>
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-/* Mobile Portrait */
-@media screen and (min-width: 0px) and (max-width: 414px){
-
-.header {
+header {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    margin: 15px 0;
 }
 
 .navbar {
@@ -42,15 +38,9 @@ export default {
     font-size: 80%;
 }
 
-ul {
-    list-style: none;
-} 
-
 li {
     display: flex;
     justify-content: space-between;
     margin: 0% 2%;
-}
-
 }
 </style>

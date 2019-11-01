@@ -1,8 +1,8 @@
 <template>
-<div id="experience-wrapper">
-    <div id="experience-body">
-        <button class="experience-menu-btn">
-            <span class="experience-menu-label">></span>
+<div id="academics">
+    <div id="academics-body">
+        <button class="academics-menu-btn">
+            <span class="academics-menu-label">></span>
             <div class="menu--hidden">
                 <div class="menu__bg-layer menu__bg-layer-2"></div>
                 <div class="menu__bg-layer menu__bg-layer-1"></div>
@@ -65,13 +65,13 @@ a {
     color: inherit;
 }
 
-#experience-wrapper {
+#academics {
     display: flex;
     justify-content: center;
     margin-top: 8vh;
     width: 100%;
 }
-#experience-body {
+#academics-body {
     display: flex;
     justify-content: flex-start;
     position: relative;
@@ -83,7 +83,7 @@ a {
     box-shadow: 0 0 2px hsla(0,0%,0%,0.1); 
 }
 
-#experience-wrapper:hover {
+#academics-wrapper:hover {
     background: hsla(0,0%,100%,1);
     box-shadow: 0 46px 12px -16px hsla(0,0%,0%,0.05); 
     transform: scale(1.02);
@@ -96,7 +96,7 @@ a {
 }
 
 /* --- menu --- */
-.experience-menu-btn {
+.academics-menu-btn {
     background: none;
     border: none;
     margin: 2vh;
@@ -104,7 +104,7 @@ a {
 }
 
 
-.experience-menu-label {
+.academics-menu-label {
     font-size: 0.8em;
     letter-spacing: 0.1em;
     font-weight:bold;
@@ -179,7 +179,7 @@ a {
     transition: all 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
-.experience-menu-btn:hover .menu__container {
+.academics-menu-btn:hover .menu__container {
     transform: translateX(0);
     transition-delay: 0;
     width: 100%;
@@ -187,17 +187,17 @@ a {
     opacity: 1;
 }
 
-.experience-menu-btn:hover .menu__bg-layer {
+.academics-menu-btn:hover .menu__bg-layer {
     padding-bottom: 250%;
     width: 250%;
     opacity: 1;
 }
 
-.experience-menu-btn:hover .menu__bg-layer-2 {
+.academics-menu-btn:hover .menu__bg-layer-2 {
     background: #FAFF7F;
 }
 
-.experience-menu-btn:hover .menu__bg-layer-1 {
+.academics-menu-btn:hover .menu__bg-layer-1 {
     transition-delay: 0.2s;
 }
 

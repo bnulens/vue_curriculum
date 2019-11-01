@@ -1,5 +1,5 @@
 <template>
-  <div id="about-module">
+  <section id="about">
     <div id="about-wrapper">
       <div class="about-intro">
         <p class="about-title">I am <strong>Brecht Nulens</strong></p>
@@ -19,7 +19,7 @@
         </p>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

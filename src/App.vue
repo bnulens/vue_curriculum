@@ -24,6 +24,16 @@ export default {
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
 ul {
   list-style: none;
 }
