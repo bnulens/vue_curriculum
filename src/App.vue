@@ -1,23 +1,19 @@
 <template>
   <div id="app">
-    <app-header></app-header>
-    <app-body></app-body>
-    <app-footer></app-footer>
+    <HeaderComp></HeaderComp>
+    <BodyComp></BodyComp>
+    <FooterComp></FooterComp>
   </div>
 </template>
 
 <script>
-import Header from './components/HeaderComp.vue'
-import Body from './components/BodyComp'
-import Footer from './components/FooterComp.vue'
+import HeaderComp from './components/HeaderComp.vue'
+import BodyComp from './components/BodyComp'
+import FooterComp from './components/FooterComp.vue'
 
 export default {
   name: 'app',
-  components: { 
-    'app-header': Header,
-    'app-body': Body,
-    'app-footer': Footer
-  }
+  components: { HeaderComp, BodyComp, FooterComp }
 }
 </script>
 
