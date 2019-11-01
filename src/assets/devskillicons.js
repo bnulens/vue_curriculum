@@ -1,5 +1,4 @@
 const devSkillIcons = [
-
     {id: 1, title: 'HTML5', pic: 'html5'},
     {id: 2, title: 'CSS3', pic: 'css3'},
     {id: 3, title: 'Sass', pic: 'sass'},
@@ -12,7 +11,6 @@ const devSkillIcons = [
     {id: 10, title: 'Github', pic: 'git'},
     {id: 11, title: 'VSCode', pic: 'vscode'},
     {id: 12, title: 'Terminal', pic: 'terminal'},
-
 ]
 
 export default devSkillIcons

@@ -1,7 +1,7 @@
 <template>
     <div id="body-wrapper">
-        <About/>
-        <Skill/>
+        <AboutComp/>
+        <SkillComp/>
     </div>
 </template>
     
@@ -10,11 +10,7 @@ import AboutComp from './AboutComp'
 import SkillComp from './SkillComp'
 
 export default {
-    name: 'Body',
-    components: {
-        'About': AboutComp,
-        'Skill': SkillComp
-    }
+    components: { AboutComp, SkillComp }
 }
 </script>
 

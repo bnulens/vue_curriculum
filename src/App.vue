@@ -24,6 +24,10 @@ export default {
   padding: 0;
 }
 
+ul {
+  list-style: none;
+}
+
 #app {
   /* font */
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
