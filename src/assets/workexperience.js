@@ -4,14 +4,14 @@ const workExperience = [
         year: "2010",
         organisation: "Recyclagepark Kuringen",
         location: "Hasselt",
-        title: "staff member"
+        title: "Staff member"
     }
     ,
     {   id: 2,
         year: "2011-2017",
         organisation: "Fiesta Europa",
         location: "Flanders",
-        title: "staff member"
+        title: "Staff member"
     }
     ,
     {   id: 3,

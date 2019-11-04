@@ -24,6 +24,10 @@ export default {
   padding: 0;
 }
 
+*:focus {
+  outline: none;
+}
+
 html {
   scroll-behavior: smooth;
 }

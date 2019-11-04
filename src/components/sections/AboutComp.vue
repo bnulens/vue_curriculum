@@ -15,8 +15,7 @@
       <div class="about-card-body">
           <h4>A little bit more about myself...</h4>
           <p class="about-card-content">Focused on <strong>continuous learning and improvement.</strong>
-          Spending spare time on Udemy, W3schools and Laracasts. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis numquam rerum cum similique alias. Quaerat cum ipsam cupiditate soluta ullam est eveniet possimus beatae rem nesciunt! Maiores culpa facilis ad.
-          Nisi voluptas quas asperiores natus obcaecati aliquam placeat sit ab. 
+          Spending spare time on Udemy, W3schools and Laracasts. 
         </p>
       </div>
     </div>
@@ -30,13 +29,14 @@ export default {
 </script>
 
 <style scoped>
-  /* INTRO p */
+
+  /* INTRO */
   .about-title {
     font-size: 1rem;
   }
 
   .about-punch {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     margin-top: 10%;
   }
 
@@ -52,7 +52,7 @@ export default {
     opacity: 0.5;
   }
 
-  /* Paragraph */
+  /* CARD */
   .about-card {
     display: flex;
     flex-wrap: wrap;
@@ -68,4 +68,21 @@ export default {
     box-shadow: 5px 10px 24px 3px rgba(219,219,219,0.57);
   }
 
+@media screen and (min-width: 800px){
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-punch {
+    font-size: 3.5rem;
+  }
+
+  .about-catch {
+    font-size: 1.5rem;
+  }
+
+  .about-time {
+    font-size: 1rem;
+  }
+}
 </style>

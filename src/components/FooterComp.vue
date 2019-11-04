@@ -24,9 +24,18 @@
         align-items: center;
         height: 100px;
         width: 100vw;
-        background-color: rgb(213, 213, 213);
+        background-color: rgb(70, 70, 70);
     }
 
+    .ref-icon {
+        width: 28px;
+        margin-left: 20px;
+        filter: grayscale(1);
+        transition: filter 0.3s;
+    }
+
+
+@media screen and (min-width: 800px){
     .ref-icon {
         width: 28px;
         margin-left: 20px;
@@ -48,4 +57,5 @@
     .github:hover {
         filter: invert(1);
     }
+}
 </style>

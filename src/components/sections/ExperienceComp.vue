@@ -13,9 +13,9 @@
 </template>
 
 <script>
-import academics from '../assets/academics'
-import workExperience from '../assets/workExperience'
-import ExperienceList from './experience/ExperienceList'
+import academics from '../../assets/academics'
+import workExperience from '../../assets/workExperience'
+import ExperienceList from '../experience/ExperienceList'
 
 export default {
     components: { ExperienceList },
@@ -42,14 +42,18 @@ export default {
         width: 50%;
         text-align: center;
         padding: 15px 10px;
-        border-bottom: 1px solid black;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
         cursor: pointer;
     }
 
     .tab.selected {
-        border: 1px solid black;
         border-bottom: none;
+        -webkit-box-shadow: 0px -15px 48px -1px rgba(219,219,219,0.57);
+        -moz-box-shadow: 0px -15px 48px -1px rgba(219,219,219,0.57);
+        box-shadow: 0px -15px 48px -1px rgba(219,219,219,0.57);
+        color: white;
+        background-color: rgb(75, 75, 75);
+        transition: background-color ease-in 0.2s;
     }
 </style>

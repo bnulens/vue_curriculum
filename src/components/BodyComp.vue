@@ -7,9 +7,9 @@
 </template>
     
 <script>
-import AboutComp from './AboutComp'
-import SkillComp from './SkillComp'
-import ExperienceComp from './ExperienceComp'
+import AboutComp from './sections/AboutComp'
+import SkillComp from './sections/SkillComp'
+import ExperienceComp from './sections/ExperienceComp'
 
 
 export default {

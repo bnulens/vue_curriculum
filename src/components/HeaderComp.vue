@@ -29,7 +29,7 @@ header {
     align-items: center;
     margin-bottom: 15px;
     padding: 10px;
-    background-color: rgb(213, 213, 213);
+    background-color: rgb(70, 70, 70);
 }
 
 .navbar {
@@ -47,6 +47,9 @@ li {
 }
 
 .navbar a {
+    color: white;
     padding: 10px 5px;
 }
+
+
 </style>

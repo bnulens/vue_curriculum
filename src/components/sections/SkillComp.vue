@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import TitledIconList from './TitledIconList'
-import devSkillIcons from '../assets/devskillicons'
-import designerSkillIcons from '../assets/designerskills'
+import TitledIconList from '../skills/TitledIconList'
+import devSkillIcons from '../../assets/devskillicons'
+import designerSkillIcons from '../../assets/designerskills'
 
 export default {
     components: { TitledIconList },
