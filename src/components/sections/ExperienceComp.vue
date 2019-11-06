@@ -14,7 +14,7 @@
 
 <script>
 import academics from '../../assets/academics'
-import workExperience from '/src/assets/workExperience'
+import workExperience from '../../assets/workExperience'
 import ExperienceList from '../experience/ExperienceList'
 
 export default {
