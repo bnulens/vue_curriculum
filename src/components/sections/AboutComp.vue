@@ -68,21 +68,21 @@ export default {
     box-shadow: 5px 10px 24px 3px rgba(219,219,219,0.57);
   }
 
-@media screen and (min-width: 800px){
-  .about-title {
-    font-size: 2rem;
-  }
+  @media screen and (min-width: 800px){
+    .about-title {
+      font-size: 2rem;
+    }
 
-  .about-punch {
-    font-size: 3.5rem;
-  }
+    .about-punch {
+      font-size: 3.5rem;
+    }
 
-  .about-catch {
-    font-size: 1.5rem;
-  }
+    .about-catch {
+      font-size: 1.5rem;
+    }
 
-  .about-time {
-    font-size: 1rem;
+    .about-time {
+      font-size: 1rem;
+    }
   }
-}
 </style>
