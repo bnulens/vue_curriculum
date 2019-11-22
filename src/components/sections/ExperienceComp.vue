@@ -33,41 +33,41 @@ export default {
 }
 </script>
 
-<style scoped>
-    .tabs {
-        display: flex;
-        z-index: -5;
-    }
+<style scoped lang="scss">
 
-    .tab {
-        width: 50%;
-        text-align: center;
-        padding: 15px 10px;
-        color: rgb(193, 193, 193);
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        cursor: pointer;
-    }
-
-    .tab.selected {
-        display: block;
-        color: white;
-        border-bottom: none;
-        
-        background: -moz-linear-gradient(45deg, #666 0%, #999 100%);
-        background: -webkit-linear-gradient(45deg, #666 0%,#999 100%);
-        background: linear-gradient(45deg, #666 0%,#999 100%);
-    }
-
-    .academics-list-fade-enter-active {
-        transition: all .3s ease;
-    }
-    .academics-list-fade-leave-active {
-        transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
-    }
-    .academics-list-fade-enter, .academics-list-fade-leave-to {
-        transform: translateX(10px);
-        opacity: 0;
+    #experience {
+        .tabs {
+            display: flex;
+            z-index: -5;
+            .tab {
+            width: 50%;
+            text-align: center;
+            padding: 15px 10px;
+            color: rgb(193, 193, 193);
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            cursor: pointer;
+            }
+            .tab.selected {
+            display: block;
+            color: white;
+            border-bottom: none;
+            
+            background: -moz-linear-gradient(45deg, #666 0%, #999 100%);
+            background: -webkit-linear-gradient(45deg, #666 0%,#999 100%);
+            background: linear-gradient(45deg, #666 0%,#999 100%);
+            }   
+        }
+        .academics-list-fade-enter-active {
+            transition: all .3s ease;
+        }
+        .academics-list-fade-leave-active {
+            transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+        }
+        .academics-list-fade-enter, .academics-list-fade-leave-to {
+            transform: translateX(10px);
+            opacity: 0;
+        }
     }
     
 </style>
