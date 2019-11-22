@@ -25,42 +25,52 @@ export default {
 <style scoped>
     header {
         display: flex;
-        position: absolute;
         justify-content: center;
         align-items: center;
-        min-width: 100%;
-        margin-left: 11vw;
-        z-index: 5;
     }
 
     .navbar {
         display: flex;
         position: relative;
-        justify-content: center;
-        align-items: center;
+        max-width: 800px;
         font-weight: 800;
+        z-index: 5;
     }
 
     li {
         display: flex;
         justify-content: space-between;
-        margin: 0% 2%;
-        
+        margin: 0% 6%;
     }
 
     a {
         display: block;
-        font-size: 1.2rem;
-        color: #2c3e50;
-        padding: 10px 5px;
+        font-size: 0.8rem;
+        color: white;
         cursor: pointer;
     }
 
-    @media screen and (max-width: 800px) {
+    @media screen and (min-width: 768px) {
+
+        .navbar {
+            top: 18vh;
+            left: 10vw;
+        }
+
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 768px) {
+
+        .navbar {
+            display: flex;
+            position: absolute;
+            top: 2vh;
+        }
     
         a {
             font-size: 0.8rem;
         }
+
     }
 
 </style>
