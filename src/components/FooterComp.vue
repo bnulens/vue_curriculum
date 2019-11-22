@@ -35,7 +35,7 @@
     }
 
 
-@media screen and (min-width: 800px){
+    @media screen and (min-width: 768px){
     .ref-icon {
         width: 28px;
         margin-left: 20px;
