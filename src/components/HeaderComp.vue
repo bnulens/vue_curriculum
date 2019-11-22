@@ -23,33 +23,44 @@ export default {
 </script>
 
 <style scoped>
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 15px;
-    padding: 10px;
-    background-color: rgb(70, 70, 70);
-}
+    header {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        min-width: 100%;
+        margin-left: 11vw;
+        z-index: 5;
+    }
 
-.navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 800;
-    font-size: 80%;
-}
+    .navbar {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        font-weight: 800;
+    }
 
-li {
-    display: flex;
-    justify-content: space-between;
-    margin: 0% 2%;
-}
+    li {
+        display: flex;
+        justify-content: space-between;
+        margin: 0% 2%;
+        
+    }
 
-.navbar a {
-    color: white;
-    padding: 10px 5px;
-}
+    a {
+        display: block;
+        font-size: 1.2rem;
+        color: #2c3e50;
+        padding: 10px 5px;
+        cursor: pointer;
+    }
 
+    @media screen and (max-width: 800px) {
+    
+        a {
+            font-size: 0.8rem;
+        }
+    }
 
 </style>
