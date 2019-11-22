@@ -17,15 +17,15 @@ export default {
 }
 </script>
 <style scoped>
-.container {
-    position: relative;
-    margin: 50px 10px 15px;
-}
-
-@media screen and (min-width: 800px) {
     .container {
-        max-width: 800px;
-        margin: 50px auto 15px;
+        position: relative;
+        margin: 50px 10px 15px;
     }
-}
+
+    @media screen and (min-width: 768px) {
+        .container {
+            max-width: 800px;
+            margin: 50px auto 15px;
+        }
+    }
 </style>
