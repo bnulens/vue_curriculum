@@ -19,53 +19,54 @@ export default {
 
 <style>
 
-* {
-  margin: 0;
-  padding: 0;
-}
+  * {
+    margin: 0;
+    padding: 0;
+  }
 
-*:focus {
-  outline: none;
-}
+  *:focus {
+    outline: none;
+  }
 
-html {
-  scroll-behavior: smooth;
-}
+  html {
+    scroll-behavior: smooth;
+  }
 
-#app {
-  /* font */
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-  /*  */
-}
+  #app {
+    /* font */
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* colors */
+    background-color: #393b3c;
+    color: white;
+    /* measures */
+  }
 
-a {
-  text-decoration: none;
-  color: #2c3e50;
-  font-weight: bold;
-}
+  a {
+    text-decoration: none;
+    font-weight: bold;
+  }
 
-ul {
-  list-style: none;
-}
+  ul {
+    list-style: none;
+  }
 
-h2 {
-  margin-bottom: 15px;
-}
+  h2 {
+    margin-bottom: 15px;
+  }
 
-section {
-  margin-bottom: 80px;
-}
+  section {
+    margin-bottom: 80px;
+  }
 
-.sr-only {
-  clip: rect(0 0 0 0);
-  clip-path: inset(100%);
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-}
+  .sr-only {
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+  }
 </style>
