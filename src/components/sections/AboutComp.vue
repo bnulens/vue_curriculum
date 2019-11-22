@@ -3,12 +3,12 @@
     <h2 class="sr-only">About</h2>
     <div id="about-wrapper">
       <div class="about-intro">
-        <p class="about-title">I am <strong>Brecht Nulens</strong></p>
-        <p class="about-punch">"Aspiring <strong>junior web developer</strong> with emphasis on graphic design"</p>
+        <p class="about-title">Hello, I am <strong>Brecht Nulens</strong></p>
+        <p class="about-punch">"An aspiring <strong>junior web developer</strong> with emphasis on graphic design"</p>
         <p class="about-catch">... <strong>moved</strong> by conceptualization and visual representation
         through <strong> project based studies.</strong> 
         </p>
-        <p class="about-time">estimated reading time ~3min.</p>
+        <p class="about-time">estimated reading time ~ (x) min.</p>
       </div>
     </div>
     <div class="about-card">
@@ -28,16 +28,24 @@ export default {
 
 </script>
 
-<style scoped>
+<style scoped >
 
+  #about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100vh;
+
+  }
   /* INTRO */
   .about-title {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 
   .about-punch {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-top: 10%;
+    text-align: initial;
   }
 
   .about-catch {
@@ -51,38 +59,45 @@ export default {
     font-size: 0.8rem;
     opacity: 0.5;
   }
-
   /* CARD */
   .about-card {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 80px 0px;
+    margin-top: -30vh;
   }
 
   .about-card-body{
     padding: 20px;
     text-align: justify;
-    -webkit-box-shadow: 5px 10px 24px 3px rgba(219,219,219,0.57);
-    -moz-box-shadow: 5px 10px 24px 3px rgba(219,219,219,0.57);
-    box-shadow: 5px 10px 24px 3px rgba(219,219,219,0.57);
   }
 
-  @media screen and (min-width: 800px){
+  @media screen and (min-width: 768px) and (max-width: 1024px){
     .about-title {
       font-size: 2rem;
     }
 
     .about-punch {
-      font-size: 3.5rem;
+      font-size: 3rem;
+    }
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 768px){
+    
+    .about-title {
+      font-size: 1rem;
+    }
+
+    .about-punch {
+      font-size: 2rem;
     }
 
     .about-catch {
-      font-size: 1.5rem;
+      font-size: 0.8rem;
     }
 
     .about-time {
-      font-size: 1rem;
+      font-size: 0.5rem;
     }
   }
 </style>
