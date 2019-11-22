@@ -37,6 +37,7 @@ export default {
     height: 100vh;
 
   }
+
   /* INTRO */
   .about-title {
     font-size: 2rem;
@@ -50,21 +51,24 @@ export default {
 
   .about-catch {
     font-size: 1rem;
+    max-width: 720px;
     margin-top: 5%;
   }
 
   .about-time {
     display: flex;
     justify-content: flex-end;
-    font-size: 0.8rem;
+    font-size: 1rem;
+    max-width: 720px;
     opacity: 0.5;
   }
+
   /* CARD */
   .about-card {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: -30vh;
+    margin-top: -30%;
   }
 
   .about-card-body{
