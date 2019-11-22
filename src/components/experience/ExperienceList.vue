@@ -1,13 +1,15 @@
 <template>
-    <ul class="xp-list">
-        <li v-for="item in list" :key="item.id">
-            <span class="year">{{ item.year }}</span>
-            <p class="title">{{ item.title }}</p>
-            <p class="organisation">{{ item.organisation }}</p>
-            <p class="location">{{ item.location }}</p>
-            <p class="status" v-if="item.status">{{ item.status }}</p>
-        </li>
-    </ul> 
+    <div class="xp-wrap">
+        <ul class="xp-list">
+            <li v-for="item in list" :key="item.id">
+                <span class="year">{{ item.year }}</span>
+                <p class="title">{{ item.title }}</p>
+                <p class="organisation">{{ item.organisation }}</p>
+                <p class="location">{{ item.location }}</p>
+                <p class="status" v-if="item.status">{{ item.status }}</p>
+            </li>
+        </ul> 
+    </div>
 </template>
 
 <script>
@@ -32,7 +34,6 @@ export default {
     li {
         margin: 20px 0px;
         padding: 10px;
-        border: 0.4px solid rgb(208, 208, 208);
         border-radius: 10px;
         z-index: 3;
         background-image: linear-gradient(to left, transparent, transparent 50%, rgb(0, 255, 153) 50%,rgb(0, 255, 153));
@@ -61,6 +62,14 @@ export default {
     }
 
     .xp-list {
+        -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+        -o-animation: fadein 2s; /* Opera < 12.1 */
+        animation: fadein 2s;
+    }
+
+    .xp-wrap {
         -webkit-box-shadow: 5px 10px 24px 3px rgba(219,219,219,0.57);
         -moz-box-shadow: 5px 10px 24px 3px rgba(219,219,219,0.57);
         box-shadow: 5px 10px 24px 3px rgba(219,219,219,0.57);
@@ -99,4 +108,33 @@ export default {
         margin-left: 20px;
     }
 
+    /* KEYFRAMES for LIST ANIMATION */
+    @keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+
+    /* Firefox < 16 */
+    @-moz-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+
+    /* Safari, Chrome and Opera > 12.1 */
+    @-webkit-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+
+    /* Internet Explorer */
+    @-ms-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+
+    /* Opera < 12.1 */
+    @-o-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
 </style>
