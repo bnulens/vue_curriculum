@@ -17,7 +17,7 @@ export default {
 }
 </script>
 
-<style>
+<style global>
 
   * {
     margin: 0;
