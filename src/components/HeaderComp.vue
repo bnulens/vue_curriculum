@@ -15,7 +15,7 @@
 export default {
     data() {
         return {
-            navItems: [ 'about', 'skills', 'experience' ]
+            navItems: [ 'skills', 'experience' ]
         }
     }
 }
@@ -40,7 +40,7 @@ export default {
     li {
         display: flex;
         justify-content: space-between;
-        margin: 0% 6%;
+        margin: 0% 12%;
     }
 
     a {
@@ -62,8 +62,6 @@ export default {
     @media screen and (min-width: 320px) and (max-width: 768px) {
 
         .navbar {
-            display: flex;
-            position: absolute;
             top: 2vh;
         }
     
