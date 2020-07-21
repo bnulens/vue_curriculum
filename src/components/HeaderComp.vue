@@ -15,7 +15,7 @@
 export default {
     data() {
         return {
-            navItems: [ 'about', 'skills', 'experience' ]
+            navItems: [ 'skills', 'experience' ]
         }
     }
 }
@@ -26,51 +26,19 @@ export default {
     header {
         display: flex;
         justify-content: center;
-        align-items: center;
     }
 
-    .navbar {
+    ul {
         display: flex;
-        position: relative;
-        max-width: 800px;
-        font-weight: 800;
-        z-index: 5;
+        padding-top: 24px;
     }
 
     li {
-        display: flex;
-        justify-content: space-between;
-        margin: 0% 6%;
+        margin-right: 24px;
     }
 
     a {
-        display: block;
-        font-size: 0.8rem;
+        text-decoration: none;
         color: white;
-        cursor: pointer;
     }
-
-    @media screen and (min-width: 768px) {
-
-        .navbar {
-            top: 18vh;
-            left: 10vw;
-        }
-
-    }
-
-    @media screen and (min-width: 320px) and (max-width: 768px) {
-
-        .navbar {
-            display: flex;
-            position: absolute;
-            top: 2vh;
-        }
-    
-        a {
-            font-size: 0.8rem;
-        }
-
-    }
-
 </style>
