@@ -26,28 +26,22 @@ export default {
     header {
         display: flex;
         justify-content: center;
-        align-items: center;
     }
 
-    .navbar {
+    ul {
         display: flex;
-        position: relative;
-        max-width: 800px;
-        font-weight: 800;
-        z-index: 5;
+        padding-top: 24px;
     }
 
     li {
         display: flex;
         justify-content: space-between;
-        margin: 0% 12%;
+        margin: 0% 6%;
     }
 
     a {
-        display: block;
-        font-size: 0.8rem;
+        text-decoration: none;
         color: white;
-        cursor: pointer;
     }
 
     @media screen and (min-width: 768px) {
@@ -62,6 +56,8 @@ export default {
     @media screen and (min-width: 320px) and (max-width: 768px) {
 
         .navbar {
+            display: flex;
+            position: absolute;
             top: 2vh;
         }
     
