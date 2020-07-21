@@ -8,7 +8,6 @@
         <p class="about-catch">... <strong>moved</strong> by conceptualization and visual representation
         through <strong> project based studies.</strong> 
         </p>
-        <p class="about-time">estimated reading time ~ (x) min.</p>
       </div>
     </div>
     <div class="about-card">
@@ -33,8 +32,8 @@ export default {
   #about {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    height: 100vh;
+    /* align-items: center; */
+    /* height: 100vh; */
 
   }
 
@@ -68,11 +67,10 @@ export default {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: -30%;
+    margin-top: -30vh;
   }
 
   .about-card-body{
-    padding: 20px;
     text-align: justify;
   }
 
