@@ -78,9 +78,9 @@ export default {
     .year {
         display: block;
         position: absolute;
-        font-size: 50px;
+        font-size: 32px;
         color: rgb(0, 255, 153);
-        padding: 12px;
+        padding: 12px 48px;
         right: 10px;
         font-weight: bold;
     }
