@@ -34,37 +34,11 @@ export default {
     }
 
     li {
-        display: flex;
-        justify-content: space-between;
-        margin: 0% 6%;
+        margin-right: 24px;
     }
 
     a {
         text-decoration: none;
         color: white;
     }
-
-    @media screen and (min-width: 768px) {
-
-        .navbar {
-            top: 18vh;
-            left: 10vw;
-        }
-
-    }
-
-    @media screen and (min-width: 320px) and (max-width: 768px) {
-
-        .navbar {
-            display: flex;
-            position: absolute;
-            top: 2vh;
-        }
-    
-        a {
-            font-size: 0.8rem;
-        }
-
-    }
-
 </style>
