@@ -22,6 +22,10 @@ export default {
   * {
     margin: 0;
     padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: 0 0;
   }
 
   *:focus {
@@ -33,13 +37,14 @@ export default {
   }
 
   #app {
+    max-width: 1080px;
+    margin: 0 auto;
     /* font */
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     /* colors */
-    background-color: #393b3c;
-    color: white;
+    color:  #393b3c;
     /* measures */
   }
 
