@@ -23,7 +23,6 @@
             <div class="user-profile-card" v-else>
                 <img :src="`${profileData.data.avatar_url}`" :alt="`${profileData.data.login}`" class="user-profile-card-avatar">
                 <div class="user-profile-card-header">
-                    <span>Hello</span>
                 </div>
             </div>
         </section>
