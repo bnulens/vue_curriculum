@@ -1,5 +1,6 @@
 <template>
     <header>
+        <h1 class="sr-only">Navbar</h1>
         <div class="header-wrapper">
             <div class="ref-icons">
                 <a href="https://github.com/bnulens" target="_blank" rel="norefferer noopener">
@@ -12,6 +13,7 @@
                     <img class="ref-icon" src="/assets/icons/email.svg" alt="Gmail">
                 </a>
             </div>
+            <!-- <span>brecht nulens</span> -->
             <ul class="navbar">
                 <li v-for="(item, i) in navItems" :key="i">
                     <a :href="`#${item}`">{{ item }}</a>
@@ -28,7 +30,7 @@
 export default {
     data() {
         return {
-            navItems: [ 'skills', 'experience' ]
+            navItems: [ 'about','skills', 'experience' ]
         }
     }
 }
