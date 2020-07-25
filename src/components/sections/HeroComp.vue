@@ -1,10 +1,10 @@
 <template>
-  <section id="about">
+  <section id="hero">
     <h1 class="sr-only">Hero</h1>
-    <div class="about-wrapper">
-      <!-- <img src="../../../public/images/unsplash-about-image.jpg" alt="hero" class="about-hero"> -->
-      <img src="../../../public/images/unsplash-shot-image.jpg" alt="hero" class="about-hero">
-      <div class="about-hero-title">
+    <div class="hero-wrapper">
+      <!-- <img src="../../../public/images/unsplash-hero-image.jpg" alt="hero" class="hero-image"> -->
+      <img src="../../../public/images/unsplash-shot-image.jpg" alt="hero" class="hero-image">
+      <div class="hero-title">
         <span>LINING</span>
         <span>UP</span>
         <span>A SHOT</span>
@@ -22,26 +22,26 @@ export default {
 
 <style scoped >
 
-  #about {
+  #hero {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .about-wrapper {
+  .hero-wrapper {
     position: relative;
     display: block;
     object-fit: contain;
   }
 
   /* INTRO */
-  .about-hero {
+  .hero-image {
     display: block;
     margin: 0 auto;
     width: 100%;
     max-width: none;
   }
 
-  .about-hero-title {
+  .hero-title {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -53,7 +53,7 @@ export default {
     font-weight: 100;
   }
 
-  .about-hero-title span {
+  .hero-title span {
     box-sizing: border-box;
     padding: 8px;
     width: auto;
@@ -61,13 +61,13 @@ export default {
   }
 
   /* CARD */
-  .about-card {
+  .hero-card {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  .about-card-body{
+  .hero-card-body{
     text-align: justify;
   }
 
