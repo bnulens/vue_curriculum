@@ -1,87 +1,110 @@
 <template>
-  <section id="about">
-    <h1 class="sr-only">About</h1>
-    <div class="about-wrapper">
-      <!-- <img src="../../../public/images/unsplash-about-image.jpg" alt="hero" class="about-hero"> -->
-      <img src="../../../public/images/unsplash-shot-image.jpg" alt="hero" class="about-hero">
-      <div class="about-hero-title">
-        <!-- <span>junior</span>
-        <span>web</span>
-        <span>developer</span> -->
-        <span>LOOKING</span>
-        <span>FOR</span>
-        <span>A SHOT</span>
-      </div>
-    </div>
-    <div class="about-card">
-      <div class="about-card-body">
-          <h3>A little bit more about myself...</h3>
-          <p class="about-card-content">Focused on <strong>continuous learning and improvement.</strong>
-          Spending spare time on Udemy, W3schools and Laracasts. 
-        </p>
-      </div>
-    </div>
-  </section>
+    <section id="about">
+        <h1 class="sr-only">About</h1>
+        <div class="about-card-wrapper">
+          <div class="about-card-container-left">
+                <h2>"I am a fresh junior web developer looking to score"</h2>
+                <h2>"Intrigued by project based studies and tests"</h2>
+          </div>
+          <div class="about-card-container-right">
+                <h2>I am <strong>Brecht Nulens</strong></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae maiores sequi, id ratione inventore numquam velit accusamus doloribus voluptates, quisquam facilis blanditiis voluptatem non mollitia perferendis fugiat autem consectetur vero! 
+                </p>
+          </div>
+        </div>
+        <section class="user-error-container" v-if="threwError">
+            <div class="user-error">
+                <img src="../../../public/assets/icons/error.svg" alt="error" class="user-avatar-error">
+                <span>Could find Github profile</span>
+            </div>
+        </section>
+        <section id="user-profile" v-else>
+            <div v-if="loading"><div class="loader"/></div>
+            <div class="user-profile-card" v-else>
+                <img :src="`${profileData.data.avatar_url}`" :alt="`${profileData.data.login}`" class="user-profile-card-avatar">
+                <div class="user-profile-card-header">
+                    <span>Hello</span>
+                </div>
+            </div>
+        </section>
+    </section>
 </template>
 
 <script>
+import axios from 'axios'
 export default {
+    data() {
+        return {
+            profileData: null,
+            loading: true,
+            threwError: false
+        }
+    },
+    created() {
+        axios
+        .get('https://api.github.com/users/bnulens')
+        .then(res => (this.profileData = res))
+        .catch(err => {
+            console.log(err)
+            this.threwError = true
+        })
+        .finally(() => this.loading = false)
+    }
 }
 </script>
 
-<style scoped >
-
-  #about {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .about-wrapper {
-    object-fit: fill;
-    display: block;
-  }
-
-  /* INTRO */
-  .about-hero {
-    position: relative;
-    display: block;
-    max-width: 100%;
-    height: 100%;
-  }
-
-  .about-hero-title {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    top: 200px;
-    left: 80px;
-    padding: 24px;
-    color: black;
-    font-size: 64px;
-    font-weight: 100;
-  }
-
-  .about-hero-title span {
-    box-sizing: border-box;
-    padding: 8px;
-    width: auto;
-    color: white;
-  }
-
-  /* CARD */
-  .about-card {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .about-card-body{
-    text-align: justify;
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1024px){
-  }
-
-  @media screen and (min-width: 320px) and (max-width: 768px){
-  }
+<style>
+    #about {
+        position: relative;
+    }
+    /* ABOUT TITLES and PARAGRAPHS */
+    .about-card-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .about-card-container-left h2 {
+        font-size: 48px;
+        font-weight: 100;
+        text-align: left;
+        color: grey;
+        padding: 16px;
+    }
+    .about-card-container-right {
+        display: block;
+        padding: 16px;
+        text-align: justify;
+        width: 1000px;
+    }
+    .about-card-container-right h2 {
+        font-size: 40px;
+        font-style: italic;
+        text-align: right;
+    }
+    .about-card-container-right p {
+        display: block;
+        font-size: 18px;
+        padding: 8px;
+    }
+    /* GITHUB AVATAR */
+    .user-error-container {
+        display: flex;
+        align-items: center;
+    }
+    .user-error {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+    .user-error span {
+        color: grey;
+        align-self: center;
+        font-size: 28px;
+        padding-bottom: 24px;
+    }
+    .user-avatar-error {
+        display: block;
+        width: 180px;
+    }
+    
 </style>
