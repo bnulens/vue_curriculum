@@ -3,10 +3,10 @@
         <ul class="xp-list">
             <li v-for="item in list" :key="item.id">
                 <span class="year">{{ item.year }}</span>
-                <p class="title">{{ item.title }}</p>
-                <p class="organisation">{{ item.organisation }}</p>
-                <p class="location">{{ item.location }}</p>
-                <p class="status" v-if="item.status">{{ item.status }}</p>
+                <span class="title">{{ item.title }}</span>
+                <span class="organisation">{{ item.organisation }}</span>
+                <span class="location">{{ item.location }}</span>
+                <span class="status" v-if="item.status">{{ item.status }}</span>
             </li>
         </ul> 
     </div>
