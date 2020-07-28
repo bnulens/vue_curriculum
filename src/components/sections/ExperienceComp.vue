@@ -13,8 +13,8 @@
 </template>
 
 <script>
-import academics from '../../assets/academics'
-import workExperience from '../../assets/workExperience'
+import academics from '@/assets/academics'
+import workExperience from '@/assets/workexperience'
 import ExperienceList from '../experience/ExperienceList'
 
 export default {

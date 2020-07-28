@@ -1,13 +1,28 @@
 <template>
     <header>
-        <ul class="navbar">
-            <li v-for="(item, i) in navItems" :key="i">
-                <a :href="`#${item}`">{{ item }}</a>
-            </li>
-            <li>
-                <a href="mailto:brechtnulens@gmail.com">contact</a>
-            </li>
-        </ul>
+        <h1 class="sr-only">Navbar</h1>
+        <div class="header-wrapper">
+            <div class="ref-icons">
+                <a href="https://github.com/bnulens" target="_blank" rel="norefferer noopener">
+                    <img class="ref-icon" src="/assets/icons/github.svg" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/brecht-nulens/" target="_blank" rel="norefferer noopener">
+                    <img class="ref-icon" src="/assets/icons/linkedin2.svg" alt="LinkedIn">
+                </a>
+                <a href="mailto:brechtnulens@gmail.com" target="_blank" rel="norefferer noopener">
+                    <img class="ref-icon" src="/assets/icons/email.svg" alt="Gmail">
+                </a>
+            </div>
+            <!-- <span>brecht nulens</span> -->
+            <ul class="navbar">
+                <li v-for="(item, i) in navItems" :key="i">
+                    <a :href="`#${item}`">{{ item }}</a>
+                </li>
+                <li>
+                    <a href="mailto:brechtnulens@gmail.com" rel="norefferer noopener">contact</a>
+                </li>
+            </ul>
+        </div>
     </header>
 </template>
 
@@ -15,7 +30,7 @@
 export default {
     data() {
         return {
-            navItems: [ 'skills', 'experience' ]
+            navItems: [ 'about','skills', 'experience' ]
         }
     }
 }
@@ -23,14 +38,16 @@ export default {
 </script>
 
 <style scoped>
-    header {
+    .header-wrapper {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
+        align-items: center;
+        height: 40px;
+        padding: 24px;
     }
 
     ul {
         display: flex;
-        padding-top: 24px;
     }
 
     li {
@@ -38,7 +55,30 @@ export default {
     }
 
     a {
+        font-size: 18px;
+        font-weight: 100;
         text-decoration: none;
-        color: white;
+        color: black;
+    }
+
+    .ref-icon {
+        width: 28px;
+        margin-left: 20px;
+        filter: grayscale(1);
+        transition: filter 0.3s;
+    }
+
+
+    @media screen and (min-width: 768px){
+        .ref-icon{
+            width: 28px;
+            margin-left: 20px;
+            filter: invert(0);
+            transition: ease filter 0.3s;
+        }
+
+        .ref-icon:hover {
+            filter: invert(1);
+        }
     }
 </style>

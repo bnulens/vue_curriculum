@@ -13,7 +13,7 @@ import FooterComp from './components/FooterComp.vue'
 
 export default {
   name: 'app',
-  components: { HeaderComp, BodyComp, FooterComp }
+  components: { HeaderComp, BodyComp, FooterComp },
 }
 </script>
 
@@ -22,6 +22,10 @@ export default {
   * {
     margin: 0;
     padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: 0 0;
   }
 
   *:focus {
@@ -33,14 +37,14 @@ export default {
   }
 
   #app {
+    max-width: 1080px;
+    margin: 0 auto;
     /* font */
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     /* colors */
-    background-color: #393b3c;
-    color: white;
-    /* measures */
+    color:  #393b3c;
   }
 
   a {
@@ -68,5 +72,26 @@ export default {
     overflow: hidden;
     position: absolute;
     white-space: nowrap;
+  }
+
+  .loader {
+    border: 16px solid white;
+    border-radius: 50%;
+    border-top: 16px solid black;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
   }
 </style>

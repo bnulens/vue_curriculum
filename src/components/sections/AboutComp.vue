@@ -1,104 +1,110 @@
 <template>
-  <section id="about">
-    <h2 class="sr-only">About</h2>
-    <div id="about-wrapper">
-      <div class="about-intro">
-        <p class="about-title">Hello, I am <strong>Brecht Nulens</strong></p>
-        <p class="about-punch">"An aspiring <strong>junior web developer</strong> with emphasis on graphic design"</p>
-        <p class="about-catch">... <strong>moved</strong> by conceptualization and visual representation
-        through <strong> project based studies.</strong> 
-        </p>
-      </div>
-    </div>
-    <div class="about-card">
-      <div class="about-card-body">
-          <h4>A little bit more about myself...</h4>
-          <p class="about-card-content">Focused on <strong>continuous learning and improvement.</strong>
-          Spending spare time on Udemy, W3schools and Laracasts. 
-        </p>
-      </div>
-    </div>
-  </section>
+    <section id="about">
+        <h1 class="sr-only">About</h1>
+        <div class="about-card-wrapper">
+          <div class="about-card-container-left">
+                <h2>"I am a fresh junior web developer looking to score"</h2>
+                <h2>"Intrigued by project based studies and tests"</h2>
+          </div>
+          <div class="about-card-container-right">
+                <h2>I am <strong>Brecht Nulens</strong></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae maiores sequi, id ratione inventore numquam velit accusamus doloribus voluptates, quisquam facilis blanditiis voluptatem non mollitia perferendis fugiat autem consectetur vero! 
+                </p>
+          </div>
+        </div>
+        <section class="user-error-container" v-if="threwError">
+            <div class="user-error">
+                <img src="../../../public/assets/icons/error.svg" alt="error" class="user-avatar-error">
+                <span>Could find Github profile</span>
+            </div>
+        </section>
+        <section id="user-profile" v-else>
+            <div v-if="loading"><div class="loader"/></div>
+            <div class="user-profile-card" v-else>
+                <img :src="`${profileData.data.avatar_url}`" :alt="`${profileData.data.login}`" class="user-profile-card-avatar">
+                <div class="user-profile-card-header">
+                    <span>Hello</span>
+                </div>
+            </div>
+        </section>
+    </section>
 </template>
 
 <script>
+import axios from 'axios'
 export default {
+    data() {
+        return {
+            profileData: null,
+            loading: true,
+            threwError: false
+        }
+    },
+    created() {
+        axios
+        .get('https://api.github.com/users/bnulens')
+        .then(res => (this.profileData = res))
+        .catch(err => {
+            console.log(err)
+            this.threwError = true
+        })
+        .finally(() => this.loading = false)
+    }
 }
-
 </script>
 
-<style scoped >
-
-  #about {
-    display: flex;
-    flex-wrap: wrap;
-    /* align-items: center; */
-    /* height: 100vh; */
-
-  }
-
-  /* INTRO */
-  .about-title {
-    font-size: 2rem;
-  }
-
-  .about-punch {
-    font-size: 3rem;
-    margin-top: 10%;
-    text-align: initial;
-  }
-
-  .about-catch {
-    font-size: 1rem;
-    max-width: 720px;
-    margin-top: 5%;
-  }
-
-  .about-time {
-    display: flex;
-    justify-content: flex-end;
-    font-size: 1rem;
-    max-width: 720px;
-    opacity: 0.5;
-  }
-
-  /* CARD */
-  .about-card {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .about-card-body{
-    text-align: justify;
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1024px){
-    .about-title {
-      font-size: 2rem;
+<style>
+    #about {
+        position: relative;
     }
-
-    .about-punch {
-      font-size: 3rem;
+    /* ABOUT TITLES and PARAGRAPHS */
+    .about-card-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
-  }
-
-  @media screen and (min-width: 320px) and (max-width: 768px){
+    .about-card-container-left h2 {
+        font-size: 48px;
+        font-weight: 100;
+        text-align: left;
+        color: grey;
+        padding: 16px;
+    }
+    .about-card-container-right {
+        display: block;
+        padding: 16px;
+        text-align: justify;
+        width: 1000px;
+    }
+    .about-card-container-right h2 {
+        font-size: 40px;
+        font-style: italic;
+        text-align: right;
+    }
+    .about-card-container-right p {
+        display: block;
+        font-size: 18px;
+        padding: 8px;
+    }
+    /* GITHUB AVATAR */
+    .user-error-container {
+        display: flex;
+        align-items: center;
+    }
+    .user-error {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+    .user-error span {
+        color: grey;
+        align-self: center;
+        font-size: 28px;
+        padding-bottom: 24px;
+    }
+    .user-avatar-error {
+        display: block;
+        width: 180px;
+    }
     
-    .about-title {
-      font-size: 1rem;
-    }
-
-    .about-punch {
-      font-size: 2rem;
-    }
-
-    .about-catch {
-      font-size: 0.8rem;
-    }
-
-    .about-time {
-      font-size: 0.5rem;
-    }
-  }
 </style>
