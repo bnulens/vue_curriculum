@@ -62,7 +62,7 @@ export default {
     }
 
     .ref-icon {
-        width: 28px;
+        width: 4px;
         margin-left: 20px;
         filter: grayscale(1);
         transition: filter 0.3s;
@@ -71,7 +71,7 @@ export default {
 
     @media screen and (min-width: 768px){
         .ref-icon{
-            width: 28px;
+            width: 24px;
             margin-left: 20px;
             filter: invert(0);
             transition: ease filter 0.3s;
