@@ -7,26 +7,26 @@
                 <h2>"Intrigued by project based studies and tests"</h2>
           </div>
           <div class="about-card-container-right">
-                <h2>I am <strong>Brecht Nulens</strong></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae maiores sequi, id ratione inventore numquam velit accusamus doloribus voluptates, quisquam facilis blanditiis voluptatem non mollitia perferendis fugiat autem consectetur vero! 
-                </p>
+                <section class="user-error-container" v-if="threwError">
+                    <div class="user-error">
+                        <img src="../../../public/assets/icons/error.svg" alt="error" class="user-avatar-error">
+                        <span>Could find Github profile</span>
+                    </div>
+                </section>
+                <section id="user-profile" v-else>
+                    <div v-if="loading"><div class="loader"/></div>
+                    <div class="user-profile-card" v-else>
+                        <img :src="`${profileData.data.avatar_url}`" :alt="`${profileData.data.login}`" class="user-profile-card-avatar">
+                        <div class="user-profile-card-content">
+                            <h2>I am <strong>Brecht Nulens</strong></h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae maiores sequi, id ratione inventore numquam velit accusamus doloribus voluptates, quisquam facilis blanditiis voluptatem non mollitia perferendis fugiat autem consectetur vero! 
+                            </p>
+                        </div>
+                    </div>
+                </section>
           </div>
         </div>
-        <section class="user-error-container" v-if="threwError">
-            <div class="user-error">
-                <img src="../../../public/assets/icons/error.svg" alt="error" class="user-avatar-error">
-                <span>Could find Github profile</span>
-            </div>
-        </section>
-        <section id="user-profile" v-else>
-            <div v-if="loading"><div class="loader"/></div>
-            <div class="user-profile-card" v-else>
-                <img :src="`${profileData.data.avatar_url}`" :alt="`${profileData.data.login}`" class="user-profile-card-avatar">
-                <div class="user-profile-card-header">
-                    <span>Hello</span>
-                </div>
-            </div>
-        </section>
+        
     </section>
 </template>
 
