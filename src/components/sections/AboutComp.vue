@@ -10,11 +10,12 @@
                 <section class="user-error-container" v-if="threwError">
                     <div class="user-error">
                         <img src="../../../public/assets/icons/error.svg" alt="error" class="user-avatar-error">
-                        <span>Could find Github profile</span>
+                        <span>Could not find Github profile</span>
                     </div>
                 </section>
-                <section id="user-profile" v-else>
-                    <div v-if="loading"><div class="loader"/></div>
+                <section class="user-profile" v-else>
+                    <div v-if="loading">
+                        <div class="loader"/></div>
                     <div class="user-profile-card" v-else>
                         <img :src="`${profileData.data.avatar_url}`" :alt="`${profileData.data.login}`" class="user-profile-card-avatar">
                         <div class="user-profile-card-content">
@@ -52,58 +53,72 @@ export default {
 }
 </script>
 
-<style>
+<style scoped lang="scss">
     #about {
         position: relative;
+        /* ABOUT TITLES and PARAGRAPHS */
+        .about-card-wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .about-card-container-left {
+                h2 {
+                    font-size: 48px;
+                    font-weight: 100;
+                    text-align: left;
+                    color: grey;
+                    padding: 16px;
+                }
+            }
+            .about-card-container-right {
+                display: block;
+                padding: 16px;
+                text-align: justify;
+                width: 1000px;
+                /* GITHUB AVATAR */
+                .user-error-container {
+                    display: flex;
+                    align-items: center;
+                    .user-error {
+                        display: flex;
+                        flex-direction: row;
+                        margin: 0 auto;
+                        .user-avatar-error {
+                            display: block;
+                            width: 180px;
+                        }
+                        span {
+                            color: grey;
+                            align-self: center;
+                            font-size: 28px;
+                            padding-bottom: 24px;
+                        }
+                    }
+                }
+                .user-profile {
+                    .user-profile-card {
+                        .user-profile-card-avatar {
+                            display: block;
+                            border-radius : 50%;
+                        }
+                        .user-profile-card-content {
+                            display: block;
+                            padding: 16px;
+                            text-align: justify;
+                            h2 {
+                                font-size: 40px;
+                                font-style: italic;
+                                text-align: right;
+                            }
+                            p {
+                                display: block;
+                                font-size: 18px;
+                                padding: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
-    /* ABOUT TITLES and PARAGRAPHS */
-    .about-card-wrapper {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .about-card-container-left h2 {
-        font-size: 48px;
-        font-weight: 100;
-        text-align: left;
-        color: grey;
-        padding: 16px;
-    }
-    .about-card-container-right {
-        display: block;
-        padding: 16px;
-        text-align: justify;
-        width: 1000px;
-    }
-    .about-card-container-right h2 {
-        font-size: 40px;
-        font-style: italic;
-        text-align: right;
-    }
-    .about-card-container-right p {
-        display: block;
-        font-size: 18px;
-        padding: 8px;
-    }
-    /* GITHUB AVATAR */
-    .user-error-container {
-        display: flex;
-        align-items: center;
-    }
-    .user-error {
-        display: flex;
-        flex-direction: row;
-        margin: 0 auto;
-    }
-    .user-error span {
-        color: grey;
-        align-self: center;
-        font-size: 28px;
-        padding-bottom: 24px;
-    }
-    .user-avatar-error {
-        display: block;
-        width: 180px;
-    }
-    
 </style>
