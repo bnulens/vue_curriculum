@@ -4,7 +4,6 @@
         <div class="about-card-wrapper">
           <div class="about-card-container-left">
                 <h2>"I am a fresh junior web developer looking to score"</h2>
-                <h2>"Intrigued by project based studies and tests"</h2>
           </div>
           <div class="about-card-container-right">
                 <section class="user-error-container" v-if="threwError">
@@ -18,13 +17,13 @@
                         <div class="loader"/></div>
                     <div class="user-profile-card" v-else>
                         <img :src="`${profileData.data.avatar_url}`" :alt="`${profileData.data.login}`" class="user-profile-card-avatar">
-                        <div class="user-profile-card-content">
-                            <h2>I am <strong>Brecht Nulens</strong></h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae maiores sequi, id ratione inventore numquam velit accusamus doloribus voluptates, quisquam facilis blanditiis voluptatem non mollitia perferendis fugiat autem consectetur vero! 
-                            </p>
-                        </div>
                     </div>
                 </section>
+                <div class="user-profile-card-content">
+                    <h2>I am <strong>Brecht Nulens</strong></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae maiores sequi, id ratione inventore numquam velit accusamus doloribus voluptates, quisquam facilis blanditiis voluptatem non mollitia perferendis fugiat autem consectetur vero! 
+                    </p>
+                </div>
           </div>
         </div>
     </section>
@@ -91,6 +90,7 @@ export default {
                             color: grey;
                             align-self: center;
                             font-size: 28px;
+                            text-align: left;
                             padding-bottom: 24px;
                         }
                     }
@@ -100,6 +100,7 @@ export default {
                         .user-profile-card-avatar {
                             display: block;
                             border-radius : 50%;
+                            width: 380px;
                         }
                         .user-profile-card-content {
                             display: block;
@@ -107,7 +108,7 @@ export default {
                             text-align: justify;
                             h2 {
                                 font-size: 40px;
-                                font-style: italic;
+                                font-weight: 300;
                                 text-align: right;
                             }
                             p {
