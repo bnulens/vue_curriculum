@@ -13,7 +13,6 @@
                     <img class="ref-icon" src="/assets/icons/email.svg" alt="Gmail">
                 </a>
             </div>
-            <!-- <span>brecht nulens</span> -->
             <ul class="navbar">
                 <li v-for="(item, i) in navItems" :key="i">
                     <a :href="`#${item}`">{{ item }}</a>
@@ -37,30 +36,30 @@ export default {
 
 </script>
 
-<style scoped>
+<style scoped lang="scss">
     .header-wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 40px;
         padding: 24px;
+        ul {
+            display: flex;
+            li {
+                margin-right: 24px;
+                a {
+                    font-size: 18px;
+                    font-weight: 100;
+                    text-decoration: none;
+                    color: black;
+                    transition: color ease 0.1s;
+                }
+                a:hover {
+                    color: #E34C25;
+                }
+            }
+        }
     }
-
-    ul {
-        display: flex;
-    }
-
-    li {
-        margin-right: 24px;
-    }
-
-    a {
-        font-size: 18px;
-        font-weight: 100;
-        text-decoration: none;
-        color: black;
-    }
-
     .ref-icon {
         width: 28px;
         margin-left: 20px;
@@ -68,17 +67,16 @@ export default {
         transition: filter 0.3s;
     }
 
-
     @media screen and (min-width: 768px){
         .ref-icon{
             width: 28px;
             margin-left: 20px;
             filter: invert(0);
             transition: ease filter 0.3s;
+            &:hover {
+                filter: invert(1);
+            }
         }
 
-        .ref-icon:hover {
-            filter: invert(1);
-        }
     }
 </style>
